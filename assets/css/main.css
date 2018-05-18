@@ -80,9 +80,40 @@ a {
     margin-right: auto;
     line-height: 30px;  
 }
+/* Overline From Center */
+.hvr-overline-from-center {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+.hvr-overline-from-center:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 51%;
+  right: 51%;
+  top: 0px;
+  bottom: 20px;
+  background: lawngreen;
+  height: 4px;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-overline-from-center:hover:before, .hvr-overline-from-center:focus:before, .hvr-overline-from-center:active:before {
+  left: 0;
+  right: 0;
+}
 .button {
     display: table-cell;
-    border-top: 3px solid lawngreen;
+    /*border-top: 3px solid lawngreen;*/
     width: auto;
     height: auto;
     padding-top: 5px;
@@ -93,11 +124,12 @@ a {
     color: white;
     text-shadow: 2px 2px 8px black;
 }
-.button:hover {
-    background-color: green;
-    background-blend-mode: lighten;
-    border-top: 3px solid pink;
-}
+.grow { 
+    transition: all .3s ease-in-out;
+ }
+.grow:hover { 
+    transform: scale(1.15);
+ }
 .mini {
     color: white;
     text-align: center;
