@@ -21,12 +21,13 @@
 body,html {
     height:100%
 }
+
 body {
     width:100%;
     background-color: black;
     background-size:cover;
     background-position:center;
-    background-repeat:no-repeat;   
+    background-repeat:no-repeat;
 }  
 video {
     position: fixed;
@@ -68,7 +69,8 @@ a {
     margin: 20px;
     text-align: center;
     text-shadow: 3px 3px 10px black;
-    font-family: Arial;
+    font-family: 'Maven Pro', Arial;
+    letter-spacing: -2px;
     font-size: 10vh;
     color: white;
 }
