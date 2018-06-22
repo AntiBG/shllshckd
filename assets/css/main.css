@@ -11,7 +11,7 @@
 .fadebg {
     animation-timing-function:ease-in;
     animation-name: fadebg;
-    animation-duration: 2s;
+    animation-duration: 4s;
 }
 .fadetext {
     animation-timing-function:ease-in;
