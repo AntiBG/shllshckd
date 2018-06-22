@@ -1,13 +1,13 @@
-    /* Text Fade */
-    @keyframes fadetext {
-    0%   { opacity: 0;}
-    100% {opacity: 1;}
-} 
     /* Background Fade */
     @keyframes fadebg {
     0%   { opacity: 0;}
     100% {opacity: 0.3;}
 }  
+    /* Text Fade */
+    @keyframes fadetext {
+    0%   { opacity: 0;}
+    100% {opacity: 1;}
+} 
 .fadebg {
     animation-timing-function:ease-in;
     animation-name: fadebg;
@@ -16,7 +16,7 @@
 .fadetext {
     animation-timing-function:ease-in;
     animation-name: fadetext;
-    animation-duration: 2s;
+    animation-duration: 2.5s;
 }
 body,html {
     height:100%
