@@ -18,3 +18,7 @@ function clickIE4(){
 	document.onmousedown=clickIE4;
 	}
 	document.oncontextmenu=new Function("return false")
+
+	video.addEventListener("canplaythrough", function() {
+		// Ready to play whole video?
+	  }, false);
