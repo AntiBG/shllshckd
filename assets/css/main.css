@@ -1,20 +1,21 @@
-    /* Background Fade */
+ /* Background Fade */
     @keyframes fadebg {
     0%   { opacity: 0;}
-    100% {opacity: 0.3;}
+    100% {opacity: 0.9;}
 }  
-    /* Text Fade */
-    @keyframes fadetext {
-    0%   { opacity: 0;}
-    100% {opacity: 1;}
-} 
 .fadebg {
     animation-timing-function:ease-in;
     animation-name: fadebg;
     animation-duration: 2.5s;
     animation-fill-mode: forwards;
+    opacity: 0;
 }
-.fadeheader {
+    /* Text - Links Fade */
+    @keyframes fadetext {
+    0%   { opacity: 0;}
+    100% {opacity: 1;}
+}
+.fadetitle {
     animation-timing-function:ease-in;
     animation-name: fadetext;
     animation-duration: 1.5s;
@@ -30,11 +31,12 @@
     animation-delay: 1.5s;
     opacity: 0; 
 }
-body,html {
-    height:100%
+a {
+    text-decoration: none;
 }
 body {
     width:100%;
+    height: 100%;
     background-color: black;
     background-size:cover;
     background-position:center;
@@ -48,13 +50,22 @@ video {
     min-height: 100%;
     width: 1280px;
     height: 720px;
-    z-index: -1;
+    z-index: -100;
     transform: translateX(-50%) translateY(-50%);
 }
-a {
-    text-decoration: none;
+/*
+.header {   
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 4vh;
+    background-color: rgba(255, 255, 255, 0.9);
+    opacity: 70%;
+} */
+.headerbutton {
+
 }
-.overlay {
+ /*.overlay {
     position: fixed;
     top: 0;
     left: 0;
@@ -62,7 +73,7 @@ a {
     right: 0;
     z-index: -1;
     background: black;
-}
+} */
 .wrapper{   
     position: absolute;
     top: 50%;
@@ -73,7 +84,7 @@ a {
     margin: auto;
     line-height: 0.7;
 }
-.header {
+.title {
     width: auto;
     height: auto;
     margin: 20px;
@@ -82,7 +93,7 @@ a {
     font-family: 'Maven Pro', Arial;
     letter-spacing: -2px;
     font-size: 10vh;
-    color: white;
+    color: white;  
 }
 .menu {
     display: flex;
@@ -91,6 +102,18 @@ a {
     margin-left: auto;
     margin-right: auto;
     line-height: 30px;  
+}
+.button {
+    display: table-cell;
+    width: auto;
+    height: auto;
+    padding-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 3.5vh;
+    color: white;
+    text-shadow: 2px 2px 8px black;
 }
 /* Overline From Center */
 .hvr-overline-from-center {
@@ -122,19 +145,6 @@ a {
 .hvr-overline-from-center:hover:before, .hvr-overline-from-center:focus:before, .hvr-overline-from-center:active:before {
   left: 0;
   right: 0;
-}
-.button {
-    display: table-cell;
-    /*border-top: 3px solid lawngreen;*/
-    width: auto;
-    height: auto;
-    padding-top: 5px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    font-size: 3.5vh;
-    color: white;
-    text-shadow: 2px 2px 8px black;
 }
 .grow { 
     transition: all .3s ease-in-out;
