@@ -11,17 +11,28 @@
 .fadebg {
     animation-timing-function:ease-in;
     animation-name: fadebg;
-    animation-duration: 3s;
+    animation-duration: 2.5s;
+    animation-fill-mode: forwards;
 }
-.fadetext {
+.fadeheader {
     animation-timing-function:ease-in;
     animation-name: fadetext;
-    animation-duration: 2.5s;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-delay: .5s;
+    opacity: 0; 
+}
+.fadelinks {
+    animation-timing-function:ease-in;
+    animation-name: fadetext;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 1.5s;
+    opacity: 0; 
 }
 body,html {
     height:100%
 }
-
 body {
     width:100%;
     background-color: black;
@@ -51,7 +62,6 @@ a {
     right: 0;
     z-index: -1;
     background: black;
-    opacity: 0.3;
 }
 .wrapper{   
     position: absolute;
@@ -74,7 +84,6 @@ a {
     font-size: 10vh;
     color: white;
 }
-
 .menu {
     display: flex;
     width: auto;
