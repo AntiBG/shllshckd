@@ -1,9 +1,9 @@
  /* Background Fade */
     @keyframes fadebg {
     0%   { opacity: 0;}
-    100% {opacity: 0.7;}
+    100% {opacity: 0.4;}
 }  
-.fadebg {
+.bgfade {
     animation-timing-function:ease-in;
     animation-name: fadebg;
     animation-duration: 2.5s;
@@ -62,9 +62,6 @@ video {
     background-color: rgba(255, 255, 255, 0.9);
     opacity: 70%;
 } */
-.headerbutton {
-
-}
  /*.overlay {
     position: fixed;
     top: 0;

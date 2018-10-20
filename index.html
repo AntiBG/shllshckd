@@ -15,18 +15,20 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet">
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-121281244-1"></script>
+	<script type="text/javascript" src="assets/js/main.js"></script>
 	<script>
-  	window.dataLayer = window.dataLayer || [];
-  		function gtag(){dataLayer.push(arguments);}
-  	gtag('js', new Date());
-  		gtag('config', 'UA-121281244-1');
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'UA-121281244-1');
 	</script>
 </head>
 <body>
-		<script type="text/javascript" src="assets/js/main.js"></script>
-<div class="fadebg overlay">
-	<video preload="auto" muted autoplay loop src="images/Last Train.mp4"></video>
-</div>
+	<div class="bgfade overlay">
+		<iframe src="images/silence.mp3" allow="autoplay" style="display:none"></iframe>
+		<audio id="bgAudio" src="images/Last Train.mp4" autoplay loop></audio>
+		<video src="images/Last Train.mp4" autoplay loop muted></video>
+	</div>
 <nav class="header">
 	<p>Hello world.</p>
 </nav>
@@ -36,12 +38,8 @@
 	</div>
 <div class="menu fadelinks">
 	<div class="button grow hvr-overline-from-center"><a class="fab fa-youtube" href="https://www.youtube.com/channel/UC2YlAbmouJ1VUSvnPl7RDpw"></a></div>
-	<div class="button grow hvr-overline-from-center"><a class="fab fa-soundcloud" href="https://soundcloud.com/hiddenhikari"></a></div>
+	<div class="button grow hvr-overline-from-center"><a class="fab fa-soundcloud" href="https://soundcloud.com/armatera"></a></div>
 	<div class="button grow hvr-overline-from-center"><a class="fab fa-steam-symbol" href="https://steamcommunity.com/id/abuseful/"></a></div>
-</div>
-	<div>
-	<p class="mini"></p>
-	</div>
 </nav>
 </body>
 </html>
