@@ -48,8 +48,8 @@ video {
     left: 50%;
     min-width: 100%;
     min-height: 100%;
-    width: 1280px;
-    height: 720px;
+    width: 1920px;
+    height: 1080px;
     z-index: -100;
     transform: translateX(-50%) translateY(-50%);
 }
