@@ -5,7 +5,7 @@ gtag('config', 'EU-123456789-9');
 
 window.onload = () => {
     let audio = document.getElementById("bgAudio");
-    audio.volume = 0.01;
+    audio.volume = 0.05;
 
     var vid = document.getElementById("bgVideo");
     var aud = document.getElementById("bgAudio");
