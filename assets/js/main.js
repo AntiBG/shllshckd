@@ -1,7 +1,7 @@
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
-gtag('config', 'EU-123456789-9');
+gtag('config', 'UA-121281244-1');
 
 window.onload = () => {
     let audio = document.getElementById("bgAudio");
